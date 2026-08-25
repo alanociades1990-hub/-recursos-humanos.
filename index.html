@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Recursos Humanos - Empresa XYZ</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1>Recursos Humanos - Empresa XYZ</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#empleos">Empleos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <h2>Gestiona tu talento con nosotros</h2>
+        <p>Tu socio estratégico en recursos humanos</p>
+    </section>
+
+    <section id="nosotros">
+        <h2>Sobre Nosotros</h2>
+        <p>Empresa dedicada a la gestión de recursos humanos, brindando soluciones integrales para tu negocio y talento.</p>
+    </section>
+
+    <section id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <ul>
+            <li>Reclutamiento y Selección</li>
+            <li>Capacitación y Desarrollo</li>
+            <li>Evaluación de Desempeño</li>
+            <li>Consultoría Laboral</li>
+            <li>Gestión Administrativa de Personal</li>
+        </ul>
+    </section>
+
+    <section id="empleos">
+        <h2>Ofertas de Empleo</h2>
+        <div class="vacantes">
+            <div class="vacante">
+                <h3>Analista de Recursos Humanos</h3>
+                <p>Requisitos: experiencia en reclutamiento, habilidades de comunicación.</p>
+                <button>Aplicar</button>
+            </div>
+            <div class="vacante">
+                <h3>Especialista en Capacitación</h3>
+                <p>Requisitos: experiencia en desarrollo de programas de capacitación.</p>
+                <button>Aplicar</button>
+            </div>
+        </div>
+        <form id="postulacion">
+            <h3>Postularse a una vacante</h3>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required />
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" required />
+            <label for="vacante">Vacante de interés:</label>
+            <select id="vacante" required>
+                <option value="">Seleccione</option>
+                <option value="Analista de Recursos Humanos">Analista de Recursos Humanos</option>
+                <option value="Especialista en Capacitación">Especialista en Capacitación</option>
+            </select>
+            <label for="cv">Adjuntar CV:</label>
+            <input type="file" id="cv" required />
+            <button type="submit">Enviar Postulación</button>
+        </form>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Dirección: Calle duarte 10, Ciudad santo domingo este</p>
+        <p>Teléfono: 829-285-2883</p>
+        <p>Email: contacto@empresaxyz.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Recursos Humanos - Empresa XYZ</p>
+    </footer>
+
+    <script>
+        // Funcionalidad simple para la forma de postulaciones
+        document.getElementById('postulacion').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('¡Gracias por postularte! Nos pondremos en contacto contigo.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
